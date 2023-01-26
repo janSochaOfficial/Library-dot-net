@@ -104,6 +104,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addRecord.aspx" />
     <Content Include="App_Data\Book.mdf" />
     <Content Include="App_Data\Book_log.ldf">
       <DependentUpon>Book.mdf</DependentUpon>
@@ -115,6 +116,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addRecord.aspx.cs">
+      <DependentUpon>addRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addRecord.aspx.designer.cs">
+      <DependentUpon>addRecord.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connection.aspx.cs">
       <DependentUpon>Connection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
