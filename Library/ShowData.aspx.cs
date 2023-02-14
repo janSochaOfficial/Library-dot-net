@@ -16,7 +16,7 @@ namespace Library
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            handler.loadFromSession(Session);
+        //    handler.loadFromSession(Session);
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Id", typeof(int));
@@ -60,9 +60,34 @@ namespace Library
 
                 dt.Rows.Add(row);
             }
+            reader.Close();
+            
             GridView1.DataSource = dt;
             GridView1.DataBind();
 
+        }
+
+
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+            GridView gv = (GridView)sender;
+            GridViewRow row = (GridViewRow)gv.Rows[e.RowIndex];
+            int id = Convert.ToInt32(row.Cells[2].Text);
+            
+            MySqlCommand command = handler.connetion.CreateCommand();
+            command.CommandText = $"DELETE FROM books WHERE Id='{id}'";
+
+            command.ExecuteNonQuery();
+            
+            
+            gv.DeleteRow(e.RowIndex);
+            Response.Redirect(Request.Url.AbsoluteUri);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Library
         {
             this.connect();
         }
-        void connect()
+        public void connect()
         {
             string myconnection =
                "Server=" + this.server + ";" +
