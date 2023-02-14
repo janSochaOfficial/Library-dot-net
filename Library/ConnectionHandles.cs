@@ -71,7 +71,7 @@ namespace Library
             this.connect();
         }
 
-        public void loadFromSession(HttpSessionState Session){
+        public void loadFromSession(HttpSessionState Session)
         {
             this.changeConnetionData(
                 (string)Session["server"],
