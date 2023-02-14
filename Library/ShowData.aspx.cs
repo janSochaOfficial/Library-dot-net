@@ -12,30 +12,11 @@ namespace Library
 {
     public partial class ShowData : System.Web.UI.Page
     {
-
-        public MySqlConnection connect()
-        {
-            string myconnection =
-               "Server=localhost;" +
-               //"Port=8080;" +
-               "Database=library;" +
-               "User=root;" +
-               "Password=;";
-            MySqlConnection connection = new MySqlConnection(myconnection);
-            try
-            {
-                connection.Open();
-                return connection;
-            }
-            catch (MySql.Data.MySqlClient.MySqlException ex)
-            {
-                return null;
-
-            }
-        }
+        ConnectionHandler handler = new ConnectionHandler();
         protected void Page_Load(object sender, EventArgs e)
         {
-            MySqlConnection conn = this.connect();
+
+            handler.loadFromSession(Session);
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Id", typeof(int));
@@ -47,7 +28,7 @@ namespace Library
             dt.Columns.Add("Pages", typeof(int));
             dt.Columns.Add("Description", typeof(string));
 
-            MySqlCommand command = conn.CreateCommand();
+            MySqlCommand command = handler.connetion.CreateCommand();
             command.CommandText = "SELECT * FROM books";
 
             //albo

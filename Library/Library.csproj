@@ -123,6 +123,7 @@
     <Compile Include="addRecord.aspx.designer.cs">
       <DependentUpon>addRecord.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionHandles.cs" />
     <Compile Include="Connection.aspx.cs">
       <DependentUpon>Connection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -9,12 +9,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <asp:Label ID="lbTitle" runat="server" Text="Łączenie z bazą danych" CssClass="Titile"></asp:Label>
+        <div class="input-pair">
+            <asp:Label ID="lbServer" runat="server" Text="nazwa serwera"></asp:Label>
+            <asp:TextBox ID="tbServer" runat="server"></asp:TextBox>
         </div>
-        <asp:Button ID="btConnect" runat="server" OnClick="btConnect_Click" Text="Button" />
-        <p>
-            <asp:Label ID="lbInfo" runat="server" Text="Label"></asp:Label>
-        </p>
+        <div class="input-pair">
+            <asp:Label ID="lbDatabase" runat="server" Text="Baza danych"></asp:Label>
+            <asp:TextBox ID="tbDatabase" runat="server"></asp:TextBox>
+        </div>
+        <div class="input-pair">
+            <asp:Label ID="lbUser" runat="server" Text="nazwa urzytkownika"></asp:Label>
+            <asp:TextBox ID="tbUser" runat="server"></asp:TextBox>
+        </div>
+        <div class="input-pair">
+            <asp:Label ID="lbPassword" runat="server" Text="hasło"></asp:Label>
+            <asp:TextBox ID="tbPassword" runat="server"></asp:TextBox>
+        </div>
+        <asp:Button ID="btConnect" runat="server" Text="Połącz" OnClick="btConnect_Click" />
+        <asp:Label ID="lbError" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>
