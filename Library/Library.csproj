@@ -110,6 +110,7 @@
       <DependentUpon>Book.mdf</DependentUpon>
     </Content>
     <Content Include="Connection.aspx" />
+    <Content Include="editRecord.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ShowData.aspx" />
     <Content Include="Web.config" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Connection.aspx.designer.cs">
       <DependentUpon>Connection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editRecord.aspx.cs">
+      <DependentUpon>editRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editRecord.aspx.designer.cs">
+      <DependentUpon>editRecord.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

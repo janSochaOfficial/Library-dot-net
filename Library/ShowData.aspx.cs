@@ -31,8 +31,6 @@ namespace Library
             MySqlCommand command = handler.connetion.CreateCommand();
             command.CommandText = "SELECT * FROM books";
 
-            //albo
-
             MySqlDataReader reader = command.ExecuteReader();
             string authors, title, releaseDate, isbn, format, description;
             int id, pages;
@@ -70,7 +68,7 @@ namespace Library
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-
+            
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -88,6 +86,18 @@ namespace Library
             
             gv.DeleteRow(e.RowIndex);
             Response.Redirect(Request.Url.AbsoluteUri);
+        }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            GridView gv = (GridView)sender;
+            GridViewRow row = (GridViewRow)gv.Rows[Convert.ToInt32(e.CommandArgument)];
+            int id = Convert.ToInt32(row.Cells[2].Text);
+
+            Session["editId"] = id.ToString();
+
+            Response.Redirect("/editRecord.aspx");
+
         }
     }
 }
