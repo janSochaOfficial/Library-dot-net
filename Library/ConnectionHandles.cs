@@ -35,7 +35,7 @@ namespace Library
                 connection.Open();
                 this.connetion = connection;
             }
-            catch (MySql.Data.MySqlClient.MySqlException ex)
+            catch (MySql.Data.MySqlClient.MySqlException)
             {
                 this.connetion = null;
 

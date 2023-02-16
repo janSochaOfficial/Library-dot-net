@@ -19,12 +19,17 @@ namespace Library
             //handler.loadFromSession(Session);
             editId = Convert.ToInt32(Session["editId"]);
 
+            
+        }
+
+        protected void Page_LoadComplete(object sender, EventArgs e)
+        {
             MySqlCommand command = handler.connetion.CreateCommand();
             command.CommandText = $"SELECT * FROM books WHERE Id='{editId}'";
 
             MySqlDataReader reader = command.ExecuteReader();
             string authors, title, releaseDate, isbn, format, description, pages;
-            if(!reader.Read())
+            if (!reader.Read())
             {
                 Response.Redirect("/ShowData.aspx");
                 return;
@@ -37,7 +42,7 @@ namespace Library
             format = reader.GetString("Format");
             description = reader.GetString("Description");
             pages = reader.GetString("Pages");
-            
+
             tbAuthors.Text = authors;
             tbTitle.Text = title;
             tbRealese.Text = releaseDate;
@@ -48,11 +53,6 @@ namespace Library
 
 
             reader.Close();
-
-            lbInfo.Text = editId.ToString();
-
-            tbAuthors.Text = editId.ToString();
-
 
         }
 
@@ -77,10 +77,9 @@ namespace Library
                 $"`Pages`='{pages}', " +
                 $"`Description`='{description}'" +
                 $" WHERE `Id`='{editId}'";
-            lbInfo.Text = command.CommandText;
             command.ExecuteNonQuery();
 
-            //Response.Redirect("/ShowData.aspx");
+            Response.Redirect("/ShowData.aspx");
 
         }
     }

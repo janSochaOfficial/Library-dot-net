@@ -25,7 +25,6 @@
             <asp:Label ID="lbDescription" runat="server" Text="Description"></asp:Label>
             <asp:TextBox ID="tbDescription" runat="server" Rows="5" TextMode="MultiLine"></asp:TextBox>
             <asp:Button ID="btnEdit" runat="server" Text="Edit" OnClick="btnEdit_Click" CausesValidation="False" UseSubmitBehavior="False"/>
-            <asp:Label ID="lbInfo" runat="server" Text="Label"></asp:Label>
         </div>
     </form>
 </body>
