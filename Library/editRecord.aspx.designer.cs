@@ -150,15 +150,6 @@ namespace Library
         protected global::System.Web.UI.WebControls.TextBox tbDescription;
 
         /// <summary>
-        /// Kontrolka lbInfo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbInfo;
-
-        /// <summary>
         /// Kontrolka btnEdit.
         /// </summary>
         /// <remarks>
@@ -166,5 +157,14 @@ namespace Library
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEdit;
+
+        /// <summary>
+        /// Kontrolka lbInfo.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbInfo;
     }
 }
