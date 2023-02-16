@@ -16,7 +16,7 @@ namespace Library
         ConnectionHandler handler = new ConnectionHandler();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //handler.loadFromSession(Session);
+            handler.loadFromSession(Session);
             editId = Convert.ToInt32(Session["editId"]);
 
             
