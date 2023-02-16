@@ -34,7 +34,6 @@ namespace Library
                 $"('{author}', '{title}', '{releseDate}', '{isbm}', '{format}', '{pages}', '{description}')";
 
             command.ExecuteNonQuery();
-            Response.Redirect("/ShowData.apsx");
         }
     }
 }

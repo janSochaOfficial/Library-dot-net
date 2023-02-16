@@ -18,7 +18,6 @@
                 <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Usuń" ShowHeader="True" Text="Usuń" />
             </Columns>
         </asp:GridView>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/addRecord.aspx">Dodaj rekord</asp:HyperLink>
     </form>
 </body>
 </html>
