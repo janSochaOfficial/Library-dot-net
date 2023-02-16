@@ -12,39 +12,32 @@ namespace Library
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lbError.Visible = false;
         }
-        private string connectionString;
 
-        public MySqlConnection connect()
-        {
-            //1Info.Text = "Connecting 1...";
-            string myconnection =
-               "Server=localhost;" +
-               //"Port=8080;" +
-               "Database=library;" +
-               "User=root;" +
-               "Password=;";
-            MySqlConnection connection = new MySqlConnection(myconnection);
-            try
-            {
-                lbInfo.Text = "Connecting 2...";
-                connection.Open();
-                //Console.WriteLine("Connected");
-                lbInfo.Text = "Connected";
-                return connection;
-            }
-            catch (MySql.Data.MySqlClient.MySqlException ex)
-            {
-                //Console.WriteLine(("Error"));
-                lbInfo.Text = "Error";
-                return null;
-
-            }
-        }
         protected void btConnect_Click(object sender, EventArgs e)
         {
-            MySqlConnection connect = this.connect();
+            ConnectionHandler handler = new ConnectionHandler();
+
+            string server = tbServer.Text;
+            string database = tbDatabase.Text;
+            string user = tbUser.Text;
+            string password = tbPassword.Text;
+
+            handler.changeConnetionData(server, database, user, password);
+            if (handler.connetion == null)
+            {
+                lbError.Visible = true;
+                lbError.Text = "Nie udało się połączyć z baza danych";
+                return;
+            }
+
+            Session["server"] = server;
+            Session["database"] = database;
+            Session["user"] = user;
+            Session["password"] = password;
+
+            Response.Redirect("/ShowData.aspx");
         }
     }
 }

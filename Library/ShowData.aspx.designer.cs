@@ -24,6 +24,15 @@ namespace Library
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Kontrolka lbInfo.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbInfo;
+
+        /// <summary>
         /// Kontrolka GridView1.
         /// </summary>
         /// <remarks>
