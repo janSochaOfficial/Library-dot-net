@@ -70,34 +70,42 @@ namespace Library
         {
             
         }
-
+        int i = 0;
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
 
-            GridView gv = (GridView)sender;
-            GridViewRow row = (GridViewRow)gv.Rows[e.RowIndex];
-            int id = Convert.ToInt32(row.Cells[2].Text);
             
-            MySqlCommand command = handler.connetion.CreateCommand();
-            command.CommandText = $"DELETE FROM books WHERE Id='{id}'";
-
-            command.ExecuteNonQuery();
-            
-            
-            gv.DeleteRow(e.RowIndex);
-            Response.Redirect(Request.Url.AbsoluteUri);
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            GridView gv = (GridView)sender;
-            GridViewRow row = (GridViewRow)gv.Rows[Convert.ToInt32(e.CommandArgument)];
-            int id = Convert.ToInt32(row.Cells[2].Text);
+            if (e.CommandName == "EditRow")
+            {
+                GridView gv = (GridView)sender;
+                GridViewRow row = (GridViewRow)gv.Rows[Convert.ToInt32(e.CommandArgument)];
+                int id = Convert.ToInt32(row.Cells[2].Text);
 
-            Session["editId"] = id.ToString();
+                Session["editId"] = id.ToString();
 
-            Response.Redirect("/editRecord.aspx");
+                Response.Redirect("/editRecord.aspx");
+            }
+            else
+            {
+                int rowId = Convert.ToInt32(e.CommandArgument);
+                GridView gv = (GridView)sender;
+                GridViewRow row = (GridViewRow)gv.Rows[rowId];
+                int id = Convert.ToInt32(row.Cells[2].Text);
 
+                MySqlCommand command = handler.connetion.CreateCommand();
+                command.CommandText = $"DELETE FROM books WHERE Id='{id}'";
+                lbInfo.Text = i.ToString();
+                command.ExecuteNonQuery();
+                i++;
+
+                gv.DeleteRow(rowId);
+                Session["editId"] = null;
+                Response.Redirect("/editRecord.aspx");
+            }
         }
     }
 }

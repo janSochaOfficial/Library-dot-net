@@ -19,7 +19,7 @@
             <asp:TextBox ID="tbDatabase" runat="server"></asp:TextBox>
         </div>
         <div class="input-pair">
-            <asp:Label ID="lbUser" runat="server" Text="nazwa urzytkownika"></asp:Label>
+            <asp:Label ID="lbUser" runat="server" Text="nazwa użytkownika"></asp:Label>
             <asp:TextBox ID="tbUser" runat="server"></asp:TextBox>
         </div>
         <div class="input-pair">
