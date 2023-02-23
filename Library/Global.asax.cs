@@ -11,6 +11,11 @@ namespace Library
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            
+        }
+        public static int getRandom()
+        {
+            return 3;
         }
     }
 }

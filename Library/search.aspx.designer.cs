@@ -11,7 +11,7 @@ namespace Library
 {
 
 
-    public partial class Connection
+    public partial class search
     {
 
         /// <summary>
@@ -24,6 +24,24 @@ namespace Library
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Kontrolka lbAuthors.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbAuthors;
+
+        /// <summary>
+        /// Kontrolka tbAuthors.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbAuthors;
+
+        /// <summary>
         /// Kontrolka lbTitle.
         /// </summary>
         /// <remarks>
@@ -33,93 +51,111 @@ namespace Library
         protected global::System.Web.UI.WebControls.Label lbTitle;
 
         /// <summary>
-        /// Kontrolka lbServer.
+        /// Kontrolka tbTitle.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbServer;
+        protected global::System.Web.UI.WebControls.TextBox tbTitle;
 
         /// <summary>
-        /// Kontrolka tbServer.
+        /// Kontrolka lbRealese.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbServer;
+        protected global::System.Web.UI.WebControls.Label lbRealese;
 
         /// <summary>
-        /// Kontrolka lbDatabase.
+        /// Kontrolka tbRealese.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbDatabase;
+        protected global::System.Web.UI.WebControls.TextBox tbRealese;
 
         /// <summary>
-        /// Kontrolka tbDatabase.
+        /// Kontrolka lbIsbm.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbDatabase;
+        protected global::System.Web.UI.WebControls.Label lbIsbm;
 
         /// <summary>
-        /// Kontrolka lbUser.
+        /// Kontrolka tbIsbm.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbUser;
+        protected global::System.Web.UI.WebControls.TextBox tbIsbm;
 
         /// <summary>
-        /// Kontrolka tbUser.
+        /// Kontrolka lbFormat.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUser;
+        protected global::System.Web.UI.WebControls.Label lbFormat;
 
         /// <summary>
-        /// Kontrolka lbPassword.
+        /// Kontrolka tbFormat.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbPassword;
+        protected global::System.Web.UI.WebControls.TextBox tbFormat;
 
         /// <summary>
-        /// Kontrolka tbPassword.
+        /// Kontrolka lbPages.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
+        protected global::System.Web.UI.WebControls.Label lbPages;
 
         /// <summary>
-        /// Kontrolka btConnect.
+        /// Kontrolka tbPages.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btConnect;
+        protected global::System.Web.UI.WebControls.TextBox tbPages;
 
         /// <summary>
-        /// Kontrolka lbError.
+        /// Kontrolka lbDescription.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbError;
+        protected global::System.Web.UI.WebControls.Label lbDescription;
+
+        /// <summary>
+        /// Kontrolka tbDescription.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbDescription;
+
+        /// <summary>
+        /// Kontrolka btnSearch.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearch;
     }
 }
