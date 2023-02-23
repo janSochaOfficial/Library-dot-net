@@ -40,13 +40,13 @@ namespace Library
 
             lbInfo.Text = Authors;
             command.CommandText = "SELECT * FROM books WHERE " +
-                $"Authors LIKE '{Authors}%' AND " +
-                $"Title LIKE '{Title}%' AND " +
-                $"Description LIKE '{Description}%' AND " +
-                $"Release_date LIKE '{ReleaseDate}%' AND " +
-                $"ISBN LIKE '{ISBN}%' AND " +
-                $"Format LIKE '{Format}%' AND " +
-                $"Pages LIKE '{Pages}%'";
+                $"Authors LIKE '%{Authors}%' AND " +
+                $"Title LIKE '%{Title}%' AND " +
+                $"Description LIKE '%{Description}%' AND " +
+                $"Release_date LIKE '%{ReleaseDate}%' AND " +
+                $"ISBN LIKE '%{ISBN}%' AND " +
+                $"Format LIKE '%{Format}%' AND " +
+                $"Pages LIKE '%{Pages}%'";
 
             MySqlDataReader reader = command.ExecuteReader();
             string authors, title, releaseDate, isbn, format, description;
