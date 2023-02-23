@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,23 @@ namespace Library
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
+            string author = tbAuthors.Text;
+            string title = tbTitle.Text;
+            string releseDate = tbRealese.Text;
+            string isbm = tbIsbm.Text;
+            string format = tbFormat.Text;
+            string pages = tbPages.Text;
+            string description = tbDescription.Text;
 
+            Response.Redirect(String.Format("/ShowData.aspx?author={}&title={}&relasedate={}&isbm={}&format={}&pages={}&description={}", 
+               author,
+               title,
+               releseDate,
+               isbm,
+               format,
+               pages,
+               description
+            ));
         }
     }
 }
