@@ -15,7 +15,7 @@ namespace Library
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //handler.loadFromSession(Session);
+            handler.loadFromSession(Session);
         }
         ConnectionHandler handler = new ConnectionHandler();
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace Library
             }
             MySqlCommand command = handler.connetion.CreateCommand();
 
-            command.CommandText = $"SELECT * FROM users WHERE name={tbUser.Text} AND password={hashedPassword}";
+            command.CommandText = $"SELECT * FROM users WHERE name='{tbUser.Text}' AND password='{hashedPassword}'";
             MySqlDataReader reader = command.ExecuteReader();
 
             if (reader.Read())

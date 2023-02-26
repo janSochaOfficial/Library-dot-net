@@ -112,6 +112,7 @@
     <Content Include="Connection.aspx" />
     <Content Include="editRecord.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="registerSucces.aspx" />
     <Content Include="search.aspx" />
     <Content Include="ShowData.aspx" />
     <Content Include="userLogin.aspx" />
@@ -145,6 +146,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerSucces.aspx.cs">
+      <DependentUpon>registerSucces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registerSucces.aspx.designer.cs">
+      <DependentUpon>registerSucces.aspx</DependentUpon>
+    </Compile>
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
