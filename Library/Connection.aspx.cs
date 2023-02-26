@@ -36,6 +36,7 @@ namespace Library
             Session["database"] = database;
             Session["user"] = user;
             Session["password"] = password;
+            Session["connectionData"] = true;
 
             Response.Redirect("/ShowData.aspx");
         }

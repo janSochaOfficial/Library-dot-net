@@ -15,6 +15,9 @@ namespace Library
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["connectionData"] is null || !(bool)Session["connectionData"]) Response.Redirect("~/Connection.aspx");
+
             handler.loadFromSession(Session);
         }
         ConnectionHandler handler = new ConnectionHandler();
@@ -34,6 +37,7 @@ namespace Library
 
             if (reader.Read())
             {
+                Session["userLoggedIn"] = true;
                 Response.Redirect("/ShowData.aspx");
                 return;
             }
