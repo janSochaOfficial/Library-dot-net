@@ -115,6 +115,12 @@
     <Content Include="registerSucces.aspx" />
     <Content Include="search.aspx" />
     <Content Include="ShowData.aspx" />
+    <Content Include="styles\connection.css" />
+    <Content Include="styles\form-site.css" />
+    <Content Include="styles\global.css" />
+    <Content Include="styles\registerSucces.css" />
+    <Content Include="styles\reset.css" />
+    <Content Include="styles\showData.css" />
     <Content Include="userLogin.aspx" />
     <Content Include="userRegister.aspx" />
     <Content Include="Web.config" />

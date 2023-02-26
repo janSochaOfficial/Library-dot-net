@@ -1,0 +1,80 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url("reset.css");
+
+:root {
+    --background-color: #110712;
+    --accent-color: rgb(197, 195, 195);
+
+    --main-border-color: #3f3f3f;
+    --main-border: 2px solid var(--main-border-color);
+    --form-shadow: 5px 5px 30px 5px rgba(40, 70, 255, 0.4);
+
+    --main-font-color: whitesmoke;
+    --secondary-color: black;
+    --main-font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+
+    background-color: var(--background-color);
+}
+
+button,
+input[type=button],
+input[type=submit],
+table a {
+    all: unset;
+    font-size: 1em;
+
+    color: var(--main-border-color);
+    transition: all 0.3s;
+
+    padding: 0.5em 1.5em;
+    border: var(--main-border);
+    border-radius: 0.3em;
+
+    cursor: pointer;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus,
+table a:hover,
+table a:focus{
+    color: var(--main-font-color);
+    border-color: var(--main-font-color);
+}
+
+
+
+span {
+    display: block;
+}
+
+.aspNetHidden{
+    display: none;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+h4{
+    font-size: 1em;
+}

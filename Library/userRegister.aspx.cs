@@ -18,6 +18,9 @@ namespace Library
             if (Session["connectionData"] is null || !(bool)Session["connectionData"]) Response.Redirect("~/Connection.aspx");
             
             if (!(Session["userLoggedIn"] is null) && (bool)Session["userLoggedIn"]) Response.Redirect("~/ShowData.aspx");
+
+            tbPassword.Attributes["type"] = "password";
+            tbPasswdConfirm.Attributes["type"] = "password";
             handler.loadFromSession(Session);
         }
 

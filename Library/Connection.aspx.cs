@@ -13,6 +13,7 @@ namespace Library
         protected void Page_Load(object sender, EventArgs e)
         {
             lbError.Visible = false;
+            tbPassword.Attributes["type"] = "password";
         }
 
         protected void btConnect_Click(object sender, EventArgs e)

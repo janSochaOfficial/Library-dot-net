@@ -17,7 +17,7 @@ namespace Library
         {
 
             if (Session["connectionData"] is null || !(bool)Session["connectionData"]) Response.Redirect("~/Connection.aspx");
-
+            tbPassword.Attributes["type"] = "password";
             handler.loadFromSession(Session);
         }
         ConnectionHandler handler = new ConnectionHandler();

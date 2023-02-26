@@ -24,6 +24,15 @@ namespace Library
         protected global::System.Web.UI.HtmlControls.HtmlForm addForm;
 
         /// <summary>
+        /// Kontrolka lbH.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbH;
+
+        /// <summary>
         /// Kontrolka lbAuthors.
         /// </summary>
         /// <remarks>

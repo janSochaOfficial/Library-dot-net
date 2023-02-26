@@ -1,0 +1,46 @@
+﻿form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+a {
+    all: unset;
+    font-size: 1em;
+
+    color: var(--main-border-color);
+    transition: all 0.3s;
+
+    padding: 0.5em 1.5em;
+    border: var(--main-border);
+    border-radius: 0.3em;
+
+    cursor: pointer;
+}
+
+table{
+    width: 80vw;
+    border: 2px solid var(--main-border-color);
+    border-spacing: 0;
+    
+}
+
+td, th {
+    border: 2px solid var(--main-border-color);
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+table input[type=button],
+table a {
+    border: none;
+    padding: 0.2em;
+}

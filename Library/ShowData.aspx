@@ -6,13 +6,15 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="styles/showData.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server" visible="True">
         <div>
             <asp:Label ID="lbInfo" runat="server" Text="Label"></asp:Label>
         </div>
-        <asp:GridView ID="GridView1" runat="server" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowCommand="GridView1_RowCommand">
+        <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:ButtonField CommandName="EditRow" HeaderText="Edytuj" ShowHeader="True" Text="Edytuj" />
                 <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Usuń" ShowHeader="True" Text="Usuń" />

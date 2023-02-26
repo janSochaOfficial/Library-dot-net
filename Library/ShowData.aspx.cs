@@ -86,17 +86,6 @@ namespace Library
         }
 
 
-        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            
-        }
-        int i = 0;
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-
-            
-        }
-
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "EditRow")
@@ -118,9 +107,7 @@ namespace Library
 
                 MySqlCommand command = handler.connetion.CreateCommand();
                 command.CommandText = $"DELETE FROM books WHERE Id='{id}'";
-                lbInfo.Text = i.ToString();
                 command.ExecuteNonQuery();
-                i++;
 
                 gv.DeleteRow(rowId);
                 Session["editId"] = null;
