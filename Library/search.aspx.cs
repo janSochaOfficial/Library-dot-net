@@ -12,7 +12,8 @@ namespace Library
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["connectionData"] is null || !(bool)Session["connectionData"]) Response.Redirect("~/Connection.aspx");
+            if (Session["userLoggedIn"] is null || !(bool)Session["userLoggedIn"]) Response.Redirect("~/userLogin.aspx");
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)

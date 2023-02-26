@@ -112,10 +112,12 @@
     <Content Include="Connection.aspx" />
     <Content Include="editRecord.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="registerSucces.aspx" />
     <Content Include="search.aspx" />
     <Content Include="ShowData.aspx" />
+    <Content Include="userLogin.aspx" />
+    <Content Include="userRegister.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="addRecord.aspx.cs">
@@ -144,6 +146,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerSucces.aspx.cs">
+      <DependentUpon>registerSucces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registerSucces.aspx.designer.cs">
+      <DependentUpon>registerSucces.aspx</DependentUpon>
+    </Compile>
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,12 +167,19 @@
     <Compile Include="ShowData.aspx.designer.cs">
       <DependentUpon>ShowData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="userLogin.aspx.cs">
+      <DependentUpon>userLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="userLogin.aspx.designer.cs">
+      <DependentUpon>userLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userRegister.aspx.cs">
+      <DependentUpon>userRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userRegister.aspx.designer.cs">
+      <DependentUpon>userRegister.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
