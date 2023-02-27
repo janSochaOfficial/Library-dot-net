@@ -9,7 +9,7 @@ Aby uruchomić projekt należy wykonać poniższe kroki:
 - pobrać całość projektu na komputer
 - uruchomić program [xampp](https://www.apachefriends.org/pl/index.html)
 - uruchomić opcję Apache oraz MySQL
-- wejść w link [http://localhost/phpmyadmin/] i zaiportować bazę sql podaną pod nazwą **library-db.sql**
+- wejść w link (http://localhost/phpmyadmin/) i zaiportować bazę sql podaną pod nazwą **library-db.sql**
 - uruchomić plik Library.sln (wymagane jest Visual Studio oraz odpowiednie pakiety)
 - zkompilować którykolwiek plik i uruchomić aplikację
 
@@ -17,14 +17,14 @@ Po wykonaniu powyższych kroków powinna uruchomić się przeglądarka z stroną
 
 ## Sposób urzycia
 
-1. łączenie z bazą danych
+### 1. łączenie z bazą danych
     przy łączeniu się z bazą za pomocą XAMPPa w kolejne pola należy wpisać:
     
     - nazwa serweraa: localhost
     - baza danych: nazwa podana pzry importowaniu bazy z pliku
     - nazwa urzytkownika: fabrycznie root
     - hasło: fabrycznie puste
-2. logowanie i tworzenie urzytkowników
+### 2. logowanie i tworzenie urzytkowników
     1. logowanie
         jeśli dodatkowe konto nie zostało stworzone, możesz zalogować się na poniższe konto:
         
@@ -32,9 +32,9 @@ Po wykonaniu powyższych kroków powinna uruchomić się przeglądarka z stroną
         - hasło Qwerty123!
     2. rejestracja
         jedynym wymaganiem rejestracji jest unikalność nazwy urzytkownika i adresu e-mail
-3. strona z tabelą danych
+### 3. strona z tabelą danych
     1. Wyszukiwanie
-        na samym dole strony znajduje się przycisk wyszukaj, po kliknięciu przekierowywuje on do podstrony do wyszukiwania. Wyszukiwanie działa na zasadzie AND (np. gdy dane są Authors="Adam Mickiewicz" oraz Title="Balladyna" zostanie zwrócona pósta tabela)
+        na samym dole strony znajduje się przycisk wyszukaj, po kliknięciu przekierowywuje on do podstrony do wyszukiwania. Wyszukiwanie działa na zasadzie AND (np. gdy dane są Authors="Adam Mickiewicz" oraz Title="Balladyna" zostanie zwrócona pusta tabela)
     2. Zarządzanie danymi
         1. dodawanie rekordów
             Przycisk "dodaj rekord" znajduje się pod tabelą z danymi nad przyciskiem wyszukaj, po kliknięciu przekierowywuje on do podstrony do dodawania rekordu, gdzie należy uzupełnić pola i nacisnąć przycisk "Dodaj", po czym rekord zostanie dodany, a uzytkownik zostanie przekierowany do podstrony z tabelą
