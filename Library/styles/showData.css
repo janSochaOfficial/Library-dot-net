@@ -22,6 +22,11 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    color: var(--main-font-color);
+    border-color: var(--main-font-color);
+}
+
 table{
     width: 80vw;
     border: 2px solid var(--main-border-color);
