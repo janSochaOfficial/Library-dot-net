@@ -23,18 +23,18 @@ przy łączeniu się z bazą za pomocą XAMPPa w kolejne pola należy wpisać:
 
 - nazwa serweraa: localhost
 - baza danych: nazwa podana pzry importowaniu bazy z pliku
-- nazwa urzytkownika: fabrycznie root
+- nazwa użytkownika: fabrycznie root
 - hasło: fabrycznie puste
 
-## 2. logowanie i tworzenie urzytkowników
+## 2. logowanie i tworzenie użytkowników
 
 1. logowanie
     jeśli dodatkowe konto nie zostało stworzone, możesz zalogować się na poniższe konto:
     
-    - nazwa urzytkownika: root
+    - nazwa użytkownika: root
     - hasło Qwerty123!
 2. rejestracja
-    jedynym wymaganiem rejestracji jest unikalność nazwy urzytkownika i adresu e-mail
+    jedynym wymaganiem rejestracji jest unikalność nazwy użytkownika i adresu e-mail
 
 ## 3. strona z tabelą danych
 
