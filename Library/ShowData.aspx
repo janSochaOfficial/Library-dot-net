@@ -14,10 +14,10 @@
         <div>
             <asp:Label ID="lbInfo" runat="server" Text="Label"></asp:Label>
         </div>
-        <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand">
+        <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand" OnRowDeleting="GridView1_RowDeleting">
             <Columns>
                 <asp:ButtonField CommandName="EditRow" HeaderText="Edytuj" ShowHeader="True" Text="Edytuj" />
-                <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Usuń" ShowHeader="True" Text="Usuń" />
+                <asp:ButtonField ButtonType="Button" CommandName="Del" HeaderText="Usuń" ShowHeader="True" Text="Usuń" />
             </Columns>
         </asp:GridView>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/addRecord.aspx" Text="Dodaj rekord"></asp:HyperLink>

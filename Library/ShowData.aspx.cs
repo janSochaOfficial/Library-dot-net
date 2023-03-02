@@ -114,5 +114,10 @@ namespace Library
                 Response.Redirect("/editRecord.aspx");
             }
         }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
     }
 }
