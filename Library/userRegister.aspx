@@ -33,5 +33,6 @@
             <asp:Button ID="btnRegister" runat="server" Text="Zajerestruj się!" OnClick="btnRegister_Click" />
         </div>
     </form>
+    <asp:HyperLink NavigateUrl="~/userLogin.aspx" runat="server" CssClass="btn back-btn">Powrót</asp:HyperLink>
 </body>
 </html>

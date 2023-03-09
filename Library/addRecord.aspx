@@ -45,5 +45,6 @@
         </div>
         
     </form>
+    <asp:HyperLink NavigateUrl="~/ShowData.aspx" runat="server" CssClass="btn back-btn">Powrót</asp:HyperLink>
 </body>
 </html>

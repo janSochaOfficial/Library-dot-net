@@ -44,5 +44,6 @@
             <asp:Button ID="btnEdit" runat="server" Text="Edytuj" OnClick="btnEdit_Click" CausesValidation="False" UseSubmitBehavior="False"/>
         </div>
     </form>
+    <asp:HyperLink NavigateUrl="~/ShowData.aspx" runat="server" CssClass="btn back-btn">Powrót</asp:HyperLink>
 </body>
 </html>

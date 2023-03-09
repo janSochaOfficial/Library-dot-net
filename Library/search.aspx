@@ -44,5 +44,6 @@
             <asp:Button ID="btnSearch" runat="server" Text="Szukaj" OnClick="btnSearch_Click" />
         </div>
     </form>
+    <asp:HyperLink NavigateUrl="~/ShowData.aspx" runat="server" CssClass="btn back-btn">Powrót</asp:HyperLink>
 </body>
 </html>

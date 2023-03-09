@@ -21,7 +21,8 @@
             </Columns>
         </asp:GridView>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/addRecord.aspx" Text="Dodaj rekord"></asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/search.aspx">Wyszukaj</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Wyszukaj</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ShowData.aspx">Resetuj Filtry</asp:HyperLink>
     </form>
 </body>
 </html>
